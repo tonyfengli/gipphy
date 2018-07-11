@@ -5,90 +5,26 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="app.js"></script>
-    <title> Stars Wars </title>
+    <title> Animals </title>
 
 </head>
-    <div class="container">
-        <div class="row" id="choosecharacters">  
-            <div class="jumbotron col-lg-8">
-                <h1> Choose A Character </h1>
-                <div class="row">
-                    <div class="select card col-lg-3" >
-                        <h2 id="character1"> </h2>
-                        <p id="character1-health"> </p>  
-                    </div>
-                    <div class="select card col-lg-3" >
-                        <h2 id="character2"> </h2>
-                        <p id="character2-health"> </p>  
-                    </div>
-                        <div class="select card col-lg-3" >
-                        <h2 id="character3"> </h2>
-                        <p id="character3-health"> </p>  
-                    </div>
-                    <div class="select card col-lg-3" >
-                        <h2 id="character4"> </h2>
-                        <p id="character4-health"> </p>  
-                    </div>
-                </div>
-            </div>
-        </div>
 
+<body>
 
-        <div class="row">
-            <div class="jumbotron col-lg-8">
-                <h1> Your Character </h1>
-                <div class="row">
-                    <div id="currentCharacter">
-                        <h2 class="currentCharacter"> </h2>
-                        <p class="currentCharacterHealth"> </p>  
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="jumbotron col-lg-8">
-                <h1> Enemies Available to Fight </h1>
-                <div class="row"> 
-                    <div id= "Enemy0">
-                        <h2 class = "enemy" id="enemy0"> </h2>
-                        <p class = "enemyhealth" id="enemyhealth0"> </p>  
-                    </div>        
-                    <div id = "Enemy1">
-                        <h2 class = "enemy" id="enemy1"> </h2>
-                        <p class = "enemyhealth" id="enemyhealth1"> </p>  
-                    </div>               
-                    <div id = "Enemy2">
-                        <h2 class = "enemy" id="enemy2"> </h2>
-                        <p class = "enemyhealth" id="enemyhealth2"> </p>  
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="jumbotron col-lg-8">
-                <h1> Defender </h1>
-                <div class="row">
-                <div id="CurrentEnemy">
-                    <h2 class="currentEnemy"> </h2>
-                    <p class="currentEnemyHealth"> </p>  
-                </div>
-                </div>   
-            </div>
-        </div>
-          
-        <div>
-            <button id="attack"> attack </button>
-        </div> 
-        <div class="restart-button">
-            <button id="restart"> restart </button>
-        </div>  
-
-        <p id = "alertcharacter"> </p>
-        <p id = "alertenemy"> </p>
+    <div id = "animalIcons">
 
     </div>
+
+    <form id ="animal-form">
+        <label> Add an animal </label>
+        <input id = "new-animal" type="text"> </input>
+        <button id = "submit"> submit </button>
+    </form>
+
+    <div class="container" id = "animals">
+        <div class="row" id = "animal-row"> </div>
+    </div>
+
 </body>
 
 </html>
